@@ -1,0 +1,83 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #2B3A42;
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    width: 800px;
+    height: auto;
+    background-color: #2B526B;
+    margin: auto;
+    margin-top: 150px;
+    border-radius: 15px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column; 
+}
+
+.baslik {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.baslik h2 {
+    color: #1c1b1b;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.form input,
+.form textarea{
+    width: 100%;
+    margin-top: 20px;
+    font-size: 15px;
+    border-radius: 10px;
+}
+.form input[type="radio"]{
+    margin-left: 0;
+    
+}
+.form textarea {
+    height: 100px;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between; 
+    align-items: flex-start; 
+    width: 100%;
+    gap: 20px;
+}
+
+.form {
+    width: 48%; 
+    height: auto;
+}
+
+
+@media (max-width: 768px) {
+    .main {
+        width: 100%; 
+        height: auto; 
+        flex-direction: column; 
+        padding: 10px; 
+        display: flex; 
+    }
+
+    .content {
+        flex-direction: column;
+        align-items: stretch; 
+        gap: 10px;
+    }
+
+    .form{
+        width: 100%;
+        height: auto;
+    }
+}
