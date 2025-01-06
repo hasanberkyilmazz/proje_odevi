@@ -525,8 +525,13 @@ button {
      border-radius: 20px;
      padding: 30px 20px;
      margin-bottom: 30px;
+     transition: transform 0.3s ease;
 }
 
+.best_box:hover {
+     cursor: pointer;
+     transform: translateY(-20px);
+ }
 .best_box h4 {
      color: #fff;
      text-transform: uppercase;
